@@ -1,4 +1,4 @@
-include<stdio.h>
+#include<stdio.h>
 #include<string.h>
 void main()
 {
@@ -24,7 +24,8 @@ printf("Resource vector:");
 for(i=0;i<m;i++)
 scanf("%d",&total[i]);
 for(i=0;i<m;i++)
-avail[i]=0; for(i=0;i<n;i++)
+avail[i]=0; 
+for(i=0;i<n;i++)
 for(j=0;j<m;j++)
 avail[j]+=alloc[i][j];
 for(i=0;i<m;i++)
